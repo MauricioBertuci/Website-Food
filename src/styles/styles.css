@@ -1,0 +1,93 @@
+@import url('header.css');
+@import url('home.css');
+@import url('menu.css');
+@import url('testimonials.css');
+@import url('footer.css');
+
+/* Criar variavel de cores */
+:root{
+    /* Para trocar cor:
+    1. CTRL + SHIFT + H 
+    2. Escreve todas que vão ser trocada
+    3. Coloque o nome da variavel 
+    4. CTRL + ALT + ENTER, para aplicar em todas
+    */
+    --color-primary-1: #fff9ea;
+    --color-primary-2: #ffe8b4;
+    --color-primary-3: #f8d477;
+    --color-primary-4: #ffe100;
+    --color-primary-5: #ffcb45;
+    --color-primary-6: #e9a209;
+
+    --color-neutral-0: #fff;
+    --color-neutral-1: #1d1d1d;
+}
+
+*{ 
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    /* deixa a rolagem da pagina mais suave */
+    scroll-behavior: smooth;
+}
+body{
+    background-color: var(--color-primary-1);
+}
+
+section{
+    padding: 28px 8%;
+}
+
+.btn-default{
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-primary-5);
+    padding: 10px 14px;
+    font-weight: 600;
+    box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.1);
+    cursor: pointer;
+    border-radius: 12px;
+    transition: background-color .3s ease;
+}
+
+.btn-default:hover{
+    background-color: var(--color-primary-5);
+}
+
+.social-media-button {
+    display: flex;
+    gap: 10px;
+}
+
+.social-media-button a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 40px;
+    background-color: #ffffff;
+    font-size: 1.25rem;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #1d1d1d;
+    box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow .3s ease;
+}
+
+.social-media-button a:hover {
+    box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
+}
+
+.section-title{
+    color: var(--color-primary-6);
+    font-size: 1,563rem;
+}
+.section-subtitle{
+    font-size: 2.1875rem;
+}

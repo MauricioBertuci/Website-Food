@@ -1,0 +1,98 @@
+#home{
+    display: flex;
+    min-height: calc(100vh - 91px) ; /*faz o calculo da altura do herader menos a tela toda*/
+    position: relative;
+}
+
+#cta{
+    width: 35%; /* não quero que fico do mesmo tamanho e sim o texto um pouco mmenor que a imagem*/
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    margin-top: 5%;
+}
+
+#cta .title{
+    font-size: 4rem;
+    color: var(--color-neutral-1);
+}
+#cta .title span{
+    color: var(--color-primary-6);
+}
+
+#cta_buttons{
+    display: flex;
+    gap: 24px;
+}
+
+#cta_buttons a{
+    text-decoration: none;
+    color: #1d1d1d;
+}
+
+#phone_button {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    background-color: var(--color-neutral-0);
+    padding: 8px 14px;
+    font-weight: 500;
+    box-shadow: 0px 0px 12px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+}
+
+#phone_button button{
+    box-sizing: none;
+}
+ 
+#banner {
+    display: flex;
+    align-items: start;
+    justify-content: end;
+    width: 70%;
+    z-index: 2; /*Diz a posição q ira ficar*/
+}
+
+#banner img{
+    height: 100%;
+    width: fit-content;
+}
+
+.shape{
+    background-color: var(--color-primary-2);
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    border-radius: 40% 30% 0% 20%;
+    top: 0;
+    right: 0;
+    z-index: 1; /*Diz a posição q ira ficar*/
+}
+
+
+@media screen and (max-width: 1170px) {
+    #home {
+        min-height: 100%;
+        padding-top: 0;
+    }
+
+    #banner,
+    #banner img,
+    #home .shape{
+        display: none;
+    }
+
+    #cta {
+        width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+}
+
+
+
+@media screen and (max-width: 450px) {
+    #phone_button{
+        display: none;
+    }
+}
